@@ -1,0 +1,21 @@
+h5 {
+    font-family: open sans;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    color: $titleColor;
+    text-align: center;
+}
+
+@media (max-width: $breakpointDesktop) {
+    h5 {
+        font-size: 26px;
+    }
+}
+
+@media (mimaxn-width: $breakpointTablet) {
+    h5 {
+        font-size: 24px;
+    }
+}

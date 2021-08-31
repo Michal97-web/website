@@ -1,0 +1,28 @@
+h2 {
+    font-family: open sans;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 76px;
+    letter-spacing: -0.5px;
+    color: $titleColor;
+    text-align: center;
+}
+
+@media (max-width: $breakpointDesktop) {
+    h2 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: $breakpointTablet) {
+    h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: $breakpointMobile) {
+    h2 {
+        font-size: 34px;
+        background-color: black !important;
+    }
+}

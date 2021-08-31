@@ -1,0 +1,15 @@
+.body2 {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #0E242E;
+}
+
+@media (max-width: $breakpointTablet) {
+    .body2 {
+        letter-spacing: 0.25px;
+    }
+}

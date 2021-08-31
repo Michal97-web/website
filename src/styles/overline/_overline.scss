@@ -1,0 +1,29 @@
+.overline {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0.4px;
+    color: $titleColor;
+}
+
+@media (max-width: $breakpointDesktop) {
+    .overline {
+        font-weight: 400;
+        letter-spacing: 1.5px;
+    }
+}
+
+@media (max-width: $breakpointTablet) {
+    .overline {
+        font-size: 10px;
+        letter-spacing: 0.15px;
+    }
+}
+
+@media (max-width: $breakpointMobile) {
+    .overline {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+}

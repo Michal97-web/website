@@ -1,0 +1,21 @@
+.subtitle2 {
+    font-family: open sans;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.15px;
+    color: $titleColor;
+}
+
+@media (max-width: $breakpointDesktop) {
+    .subtitle2 {
+        letter-spacing: 0.5px;
+    }
+}
+
+@media (max-width: $breakpointTablet) {
+    .subtitle2 {
+        font-size: 18px;
+        letter-spacing: 0.1px;
+    }
+}

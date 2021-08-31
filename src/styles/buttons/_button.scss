@@ -1,0 +1,16 @@
+button {
+    font-family: Roboto;
+    font-weight: 500;
+    box-sizing: border-box;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 1.25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (max-width: $breakpointMobile) {
+    button {
+        letter-spacing: 0.25px;
+    }
+}

@@ -1,0 +1,27 @@
+h1 {
+    font-family: open sans;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 88px;
+    letter-spacing: -1.5px;
+    color: $titleColor;
+    text-align: center;
+}
+
+@media (max-width: $breakpointDesktop) {
+    h1 {
+        font-size: 56px;
+    }
+}
+
+@media (max-width: $breakpointTablet) {
+    h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: $breakpointMobile) {
+    h1 {
+        font-size: 38px;
+    }
+}

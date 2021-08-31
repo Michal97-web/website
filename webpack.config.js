@@ -14,15 +14,28 @@ const config = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: ['babel-loader']
-      },
+      },  
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
-      }
+      },
+      {
+        test: /\.s(a|c)ss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.(png|svg|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+          }
+        ]
+      },
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
+        title: "Zadanie rekrutacyjne",
         hash: true
     })
   ],
@@ -35,7 +48,8 @@ const config = {
   devServer: {
     contentBase: __dirname + '/public',
     compress: true,
-    port: 9000,
+    port: 3000,
+    historyApiFallback: true,
     open: true,
     stats: {
         assets: false,
@@ -50,7 +64,7 @@ const config = {
         version: false,
     }
   },
-  watch: false,
+  watch: true,
   devtool: 'source-map',
 };
 

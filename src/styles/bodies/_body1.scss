@@ -1,0 +1,25 @@
+@mixin body1 {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: $titleColor;
+}
+
+.body1 {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: $titleColor;
+}
+
+@media (max-width: $breakpointTablet) {
+    .body1 {
+        font-size: 19px;
+    }
+}
